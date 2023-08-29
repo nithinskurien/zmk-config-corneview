@@ -40,30 +40,30 @@
                 base_layer {
                         label = "BASE";
 // -----------------------------------------------------------------------------------------
-// |  TAB      |  Q  |  W  |  F  |  P  |    G    |   |    J    |  L   |  U  |  Y  |  ;  |  ESC    |
-// | CTRL/CAPS |  A  |  R  |  S  |  T  |    D    |   |    H    |  N   |  E  |  I  |  O  | RCTRL/' |
-// | SHFT      |  Z  |  X  |  C  |  V  |    B    |   |    K    |  M   |  ,  |  .  |  /  | RSHFT   |
-//                         | GUI | LWR | ALT/ENT |   | ALT/SPC | BKSP | RSE |
+// |  TAB      |  Q  |  W  |  F  |  P  |    G    |   |    J    |    L     |  U  |  Y  |  ;  |  ESC    |
+// | CTRL/CAPS |  A  |  R  |  S  |  T  |    D    |   |    H    |    N     |  E  |  I  |  O  | RCTRL/' |
+// | SHFT      |  Z  |  X  |  C  |  V  |    B    |   |    K    |    M     |  ,  |  .  |  /  | RSHFT   |
+//                         | GUI | LWR | ALT/ENT |   |   SPC   | ALT/BKSP | RSE |
                         bindings = <
-   &kp TAB        &kp Q &kp W &kp F    &kp P   &kp G         &kp J           &kp L    &kp U     &kp Y   &kp SEMI    &kp ESC
-   &tp LCTRL CAPS &kp A &kp R &kp S    &kp T   &kp D         &kp H           &kp N    &kp E     &kp I   &kp O       &tp RCTRL SQT
-   &kp LSHFT      &kp Z &kp X &kp C    &kp V   &kp B         &kp K           &kp M    &kp COMMA &kp DOT &kp FSLH    &kp RSHFT
-                         &kp LGUI &mo NUM &tp LALT RET  &tp RALT SPACE  &kp BSPC &mo FUNC
+   &kp TAB        &kp Q &kp W &kp F    &kp P   &kp G         &kp J        &kp L          &kp U     &kp Y   &kp SEMI    &kp ESC
+   &tp LCTRL CAPS &kp A &kp R &kp S    &kp T   &kp D         &kp H        &kp N          &kp E     &kp I   &kp O       &tp RCTRL SQT
+   &kp LSHFT      &kp Z &kp X &kp C    &kp V   &kp B         &kp K        &kp M          &kp COMMA &kp DOT &kp FSLH    &kp RSHFT
+                              &kp LGUI &mo NUM &tp LALT RET  &kp SPACE    &tp RALT BSPC  &mo FUNC
                         >;
                 };
 
                 num_layer {
                         label = "NUM";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |    %    |   |    ^    |  &  |  (  |  )  |  *  |      \    |
-// | CTRL |  1  |  2  |  3  |  4  |    5    |   |    -    |  =  |  {  |  }  |  `  | RCTRL/"|" |
-// | SHFT |  6  |  7  |  8  |  9  |    0    |   |    _    |  +  |  [  |  ]  |  ~  |    RSHFT  |
-//                    | GUI |     | ALT/ENT |   | ALT/SPC | BKSP|     |
+// |  TAB |  !  |  @  |  #  |  $  |    %    |   |    ^    |    &    |  (  |  )  |  *  |      \    |
+// | CTRL |  1  |  2  |  3  |  4  |    5    |   |    -    |    =    |  {  |  }  |  `  | RCTRL/"|" |
+// | SHFT |  6  |  7  |  8  |  9  |    0    |   |    _    |    +    |  [  |  ]  |  ~  |    RSHFT  |
+//                    | GUI |     | ALT/ENT |   |   SPC   | ALT/BKSP|     |
                         bindings = <
-   &kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT     &kp CARET       &kp AMPS  &kp LPAR &kp RPAR &kp KP_MULTIPLY &kp BSLH
-   &kp LCTRL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5        &kp MINUS       &kp EQUAL &kp LBRC &kp RBRC &kp GRAVE       &tp RCTRL PIPE
-   &kp LSHFT &kp N6   &kp N7 &kp N8   &kp N9   &kp N0        &kp UNDER       &kp PLUS  &kp LBKT &kp RBKT &kp TILDE       &kp RSHFT
-                             &kp LGUI &trans   &tp LALT RET  &tp RALT SPACE  &kp BSPC  &trans
+   &kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT     &kp CARET    &kp AMPS       &kp LPAR &kp RPAR &kp KP_MULTIPLY &kp BSLH
+   &kp LCTRL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5        &kp MINUS    &kp EQUAL      &kp LBRC &kp RBRC &kp GRAVE       &tp RCTRL PIPE
+   &kp LSHFT &kp N6   &kp N7 &kp N8   &kp N9   &kp N0        &kp UNDER    &kp PLUS       &kp LBKT &kp RBKT &kp TILDE       &kp RSHFT
+                             &kp LGUI &trans   &tp LALT RET  &kp SPACE    &tp RALT BSPC  &trans
                         >;
                 };
 
